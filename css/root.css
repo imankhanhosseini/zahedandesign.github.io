@@ -1,0 +1,112 @@
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 100;
+    src: url("font/kalameh/woff/KalamehWeb-Thin.woff");
+    src: url("font/kalameh/woff2/KalamehWeb-Thin.woff2") format("woff2"),
+      url("font/kalameh/TTF/Kalameh-Thin.ttf") format("ttf"), 
+}
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 200;
+    src: url("font/kalameh/woff/KalamehWeb-ExtraLight.woff");
+    src: url("font/kalameh/woff2/KalamehWeb-ExtraLight.woff2") format("woff2"),
+      url("font/kalameh/TTF/Kalameh-ExtraLight.ttf") format("ttf"), 
+}
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 250;
+    src: url("font/kalameh/woff/KalamehWeb-Light.woff");
+    src: url("font/kalameh/woff2/KalamehWeb-Light.woff2") format("woff2"),
+      url("font/kalameh/TTF/Kalameh-Light.ttf") format("ttf"), 
+}
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 350;
+    src: url("font/kalameh/woff/KalamehWeb-Medium.woff");
+    src: url("font/kalameh/woff2/KalamehWeb-Medium.woff2") format("woff2"),
+      url("font/kalameh/TTF/Kalameh-Medium.ttf") format("ttf"), 
+}
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 400;
+    src: url("font/kalameh/woff/KalamehWeb-SemiBold.woff");
+    src: url("font/kalameh/woff2/KalamehWeb-SemiBold.woff2") format("woff2"),
+      url("font/kalameh/TTF/Kalameh-SemiBold.ttf") format("ttf"), 
+}
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 500;
+    src: url("font/kalameh/woff/KalamehWeb-Bold.woff");
+    src: url("font/kalameh/woff2/KalamehWeb-Bold.woff2") format("woff2"),
+      url("font/kalameh/TTF/Kalameh-Bold.ttf") format("ttf"), 
+}
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 600;
+    src: url("font/kalameh/woff/KalamehWeb-ExtraBold.woff");
+    src: url("font/kalameh/woff2/KalamehWeb-ExtraBold.woff2") format("woff2"),
+      url("font/kalameh/TTF/Kalameh-ExtraBold.ttf") format("ttf"), 
+}
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 700;
+    src: url("font/kalameh/woff/KalamehWeb-Black.woff");
+    src: url("font/kalameh/woff2/KalamehWeb-Black.woff2") format("woff2"),
+      url("font/kalameh/TTF/Kalameh-Black.ttf") format("ttf"), 
+}
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 300;
+    src: url("font/kalameh/woff/KalamehWeb-Regular.woff");
+    src: url("font/kalameh/woff2/KalamehWeb-Regular.woff2") format("woff2"),
+      url("font/kalameh/TTF/Kalameh-Regular.ttf") format("ttf"), 
+}
+:root {
+    --main: #206978;
+    --secondary: #ff9442;
+    --third: #46a6a6;
+    --BLCK: #252525;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "kalameh", sans-serif;
+    font-weight: 300;
+    scrollbar-width: auto;
+    scrollbar-color: var(--main) var(--BGCLR);
+}
+html {
+    scroll-behavior: smooth;
+    /* scrollbar-gutter: stable; */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+*::-webkit-scrollbar {
+    width: 10px;
+  }
+
+*::-webkit-scrollbar-track {
+    background:#fff;
+  }
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--main);
+    border-radius: 10px;
+    border: 3px solid #fff;
+  }
+
+::selection {
+    background: var(--secondary);
+    color: #fff;
+}
