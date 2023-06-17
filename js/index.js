@@ -6,6 +6,9 @@ let toLeftScroll;
 let slideIndex = 1
 
 function ready() {
+    loadHeader()
+    loadFooter()
+
     slidesContainer = document.querySelector('.slides')
     slides = slidesContainer.querySelectorAll('img')
     imgWidth = slidesContainer.querySelectorAll('img')[0].clientWidth
@@ -52,10 +55,20 @@ function previousSlide() {
         } else return
 }
 
-function showMenu() {
-    const menu= document.querySelector('ul.menu'),
-          layer = document.querySelector('.menu_layer')
+function loadHeader() {
+    const xml = new XMLHttpRequest()
+    xml.onload = function() {
+        document.querySelector('header').innerHTML = this.responseText
+    }
+    xml.open('GET', 'component/header.html')
+    xml.send()
+}
 
-    menu.classList.add('active')
-    layer.classList.add('active')
+function loadFooter() {
+    const xml = new XMLHttpRequest()
+    xml.onload = function() {
+        document.querySelector('footer').innerHTML = this.responseText
+    }
+    xml.open('GET', 'component/footer.html')
+    xml.send()
 }

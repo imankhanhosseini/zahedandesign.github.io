@@ -1,0 +1,184 @@
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    background: linear-gradient(to bottom, rgba(20, 9, 35, 0.55) 0%, rgba(20, 9, 35, 0.55) 100%), url('../media/background_zahedandesign_com.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 90px;
+}
+.hero h1 {
+    font-size: 4.7rem;
+    word-spacing: 4px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: -3rem;
+    line-height: 1;
+} 
+.hero h1::after {
+    content: '';
+    display: block;
+    margin: 14px auto 0;
+    width: 65%;
+    height: 4px;
+    background: var(--secondary);
+    border-radius: 3px;
+}
+.hero .section_wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.samples {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.samples .navigation ul{
+    margin: 0 auto;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    list-style-type: none;
+    gap: 2.2rem;
+}
+.samples .navigation ul li {
+    color: var(--BLCK);
+    font-size: 1.12rem;
+    opacity: .65;
+    transition: opacity 200ms;
+}
+.samples .navigation ul li:hover {
+    cursor: default;
+    opacity: 1;
+}
+.samples .navigation ul li.current {
+    opacity: 1;
+}
+.samples .navigation .active_line {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: var(--main);
+    bottom: -3px;
+    border-radius: 100vmax;
+    left: auto;
+    transition: 300ms;
+}
+.samples .items {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-auto-rows: 150px;
+    gap: 1rem;
+    align-self: center;
+    margin-block: 80px;
+    transition: 400ms;
+}
+.samples .items .sample {
+    direction: rtl;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: darkgoldenrod;
+    grid-row: span 2;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+}
+.samples .items .sample::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(20, 9, 35, 0.55) 0%, rgba(20, 9, 35, 0.55) 100%);
+    pointer-events: none;
+    opacity: 0;
+    transition: 400ms;
+    z-index: 10;
+}
+.samples .items .sample a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: default;
+    padding: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.samples .items .sample img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.08);
+    transition: 300ms;
+}
+.samples .items .sample .descript {
+    position: relative;
+    z-index: 20;
+    color: #fff;
+    transition: 300ms;
+    transform: translateY(15px);
+    opacity: 0;
+}
+.samples .items .sample .descript > .title {
+    font-weight: 400;
+}
+.samples .items .sample .descript > p {
+    opacity: .84;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.samples .items .sample .descript > .technologes {
+    opacity: .84;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.samples .items .sample:hover img {
+    transform: scale(1.02);
+    filter: blur(1px);
+}
+.samples .items .sample:hover::after {
+    opacity: .8;
+}
+.samples .items .sample.disabled {
+    opacity: 0;
+    transform: translateX(0) translateY(0) scale(0);
+}
+.samples .items .sample:hover .descript {
+    transform: translateY(0);
+    opacity: 1;
+}
+@media (max-width: 1000px) {
+    .samples .items {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+@media (max-width: 680px) {
+    .samples .items {
+        grid-template-columns: repeat(1, 300px);
+    }
+    .samples .items .sample:nth-child(2n+1) {
+        grid-row: span 3;
+        background-color: green;
+    }
+}

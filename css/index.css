@@ -1,90 +1,3 @@
-header.header {
-    background: #f1f4fb;
-    height: 80px;
-    padding: 0 1rem;
-    border-bottom: 1px solid var(--main);
-}
-header.header > div {
-    max-width: 1450px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
-header.header .logo a {
-    display: flex;
-}
-header.header .logo img {
-    height: 60px;
-}
-header.header nav {
-    display: flex;
-    align-items: center;
-}
-header.header nav .menu {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    list-style-type: none;
-}
-header.header nav .menu li a {
-    position: relative;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--main);
-    transition: color 150ms;
-}
-header.header nav .menu li a:hover {
-    color: var(--secondary);
-}
-header.header nav .menu li a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 0;
-    border-radius: 2px;
-    right: 0;
-    bottom: 0;
-    background: var(--secondary);
-    transition: height 150ms;
-}
-header.header nav .menu li a:hover::after {
-    height: 3px;
-}
-header.header .order {
-    margin-left: 36px;
-    text-decoration: none;
-    font-size: 1rem;
-    line-height: 1;
-    padding: 10px 18px 9px;
-    border-radius: 10px;
-    font-weight: 500;
-    background: var(--main);
-    color: #fff;
-    transition: background 150ms;
-}
-header.header .order:hover {
-    background: var(--secondary);
-}
-#show-menu {
-    display: none;
-    font-size: 1.2rem;
-    background: var(--main);
-    color: #fff;
-    padding: 4px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    transition: 150ms;
-}
-#show-menu:active {
-    transform: scale(.9);
-}
-/* Header // */
 
 /* Slider */
 .wrapper {
@@ -232,7 +145,7 @@ header.header .order:hover {
     position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;
-    border: 4px solid #2069785d;
+    border: 4px solid #3f216162;
     border-radius: 40px 0 40px 40px;
     overflow: hidden;
     transition: 250ms;
@@ -401,7 +314,7 @@ header.header .order:hover {
     right: 50%;
     height: 100%;
     width: 2px;
-    background: var(--secondary);
+    background: var(--main);
     transform: translateX(50%);
     border-radius: 2px;
     z-index: -1;
@@ -413,7 +326,7 @@ header.header .order:hover {
     width: 20px;
     height: 20px;
     border-radius: 100vmax;
-    background: var(--secondary);
+    background: var(--main);
 }
 .why_zd .content .items .side .item .line > .circle > .circle {
     box-sizing: content-box;
@@ -421,7 +334,7 @@ header.header .order:hover {
     width: 13px;
     height: 13px;
     border-radius: 13px;
-    background-color: var(--secondary);
+    background-color: var(--main);
     border: 2px solid #fff;
 }
 .why_zd .content .items .side .item .info {
@@ -494,7 +407,7 @@ header.header .order:hover {
     border-radius: 100vmax;
     font-size: 2.6rem;
     line-height: 1; 
-    background: var(--secondary);
+    background: var(--main);
     color: #fff;
     z-index: 4;
 }
@@ -517,7 +430,7 @@ header.header .order:hover {
     right: 7%;
     top: 50%;
     transform: translateY(-50%);
-    background: var(--main);
+    background: var(--secondary);
 }
 /* Work Process // */
 
@@ -549,7 +462,7 @@ header.header .order:hover {
 .advantages .adv--items .item .adv--num {
     font-weight: 600;
     font-size: 1.4rem;
-    color: var(--secondary);
+    color: var(--third);
 }
 .advantages .adv--items .item .title {
     font-weight: 600;
@@ -568,14 +481,15 @@ header.header .order:hover {
     margin-bottom: 2rem;
 }
 .advantages .ordering .content .paragraph {
-    background: #f1f4fb;
+    /* background: #f1f4fb; */
+    border: 1px solid var(--main);
     max-width: 700px;
     margin: 0 auto;
     width: 90%;
     font-size: 1.2rem;
-    border-radius: 4px;
+    border-radius: 5px;
     color: var(--BLCK);
-    margin-bottom: 14px;
+    margin-bottom: 24px;
 }
 .advantages .ordering .content .paragraph p {
     text-align: justify;
@@ -606,87 +520,12 @@ header.header .order:hover {
     background: var(--secondary);
 }
 .advantages .ordering .content .start_button i {
-    color: var(--secondary);
+    color: var(--third);
 }
 .advantages .ordering .content .start_button:hover i {
     color: var(--main);
 }
 /* Advantages // */
-
-/* Footer */
-footer.footer {
-    background: var(--main);
-    padding-block: 60px;
-}
-
-footer.footer .brand {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 140px;
-    padding-bottom: 30px;
-}
-footer.footer .brand .about-social {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-}
-footer.footer .brand .logo img{
-    height: 180px;
-}
-footer.footer .brand .about-social .social_media ul {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    list-style-type: none;
-}
-footer.footer .brand .about-social .social_media ul li {
-    position: relative;
-    box-sizing: content-box;
-    display: flex;
-    padding: 6px;
-    border-radius: 2px;
-    transition: 150ms;
-}
-footer.footer .brand .about-social .social_media ul li:hover {
-    background: var(--secondary);
-}
-footer.footer .brand .about-social .social_media ul li a {display: flex;}
-footer.footer .brand .about-social .about {
-    color: #fff;
-    text-align: justify;
-}
-footer.footer .powerd {
-    max-width: 1300px;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 40px;
-    border-top: 1px solid #278598;
-}
-footer.footer .powerd p{
-    text-align: center;
-    display: flex;   
-    align-items: center;
-    gap: 4px;
-    color: #fff;
-}
-footer.footer .powerd p a {
-    text-decoration: none;
-    color: var(--secondary);
-    font-weight: 400;
-}
-
-
-
-/* Footer // */
 
 /* Media Query */
 
@@ -700,7 +539,6 @@ footer.footer .powerd p a {
     .service {padding: 0 30px;}
     .wrapper .slides button {opacity: 1; width: 30px; height: 30px; border-radius: 30px;}
     .wrapper .slides button i{line-height: 30px;}
-    footer.footer .brand {gap: 90px;}
 }
 @media (max-width:600px) {
     .services {background-size: initial;}
@@ -717,47 +555,6 @@ footer.footer .powerd p a {
     .paretner_brands .header h2 {font-size: 20px;}
     .paretner_brands .items {flex-wrap: wrap; padding: 0; justify-content: center; gap: 1.6rem;}
     .paretner_brands .items .item {width: 35%;}
-    header.header nav .menu {
-        width: 80%;
-        height: 100%;
-        position: fixed;
-        right: 0;
-        top: 0;
-        transform: translateX(100%);
-        flex-direction: column;
-        gap: 0;
-        background: #fff;
-        z-index: 10;
-        transition: 250ms;
-    }
-    header.header nav .menu.active {
-        transform: translate(0);
-    }
-    header.header nav .menu li {width: 85%;}
-    header.header nav .menu li a {height: 50px; width: 100%; display: block; line-height: 50px; font-weight: 400;}
-    .menu_layer {
-        pointer-events: none;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        right: 0;
-        background: #080a38;
-        z-index: 9;
-        opacity: 0;
-        transition: 250ms;
-    }
-    .menu_layer.active {
-        pointer-events: all;
-        display: block;
-        opacity: .5;
-    }
-    header.header > div {height: 100%;}
-    .intro .descrip h2 {text-align: center;}
-    .intro .descrip p {text-align: center;}
-    .intro .descrip a {display: block; width: fit-content; margin: 0 auto;}
-    header.header .order {margin-left: 20px;}
-    #show-menu {display: flex;}
     .work_process > .container .content {flex-direction: row;}
     .work_process > .container .levels {flex-direction: column;}
     .work_process > .container .levels .level {width: initial; height: 120px; align-items: center;}
@@ -766,11 +563,6 @@ footer.footer .powerd p a {
     .work_process > .container .descripts {flex-direction: column;}
     .work_process > .container .descripts .descript {display: flex; width: initial; height: 120px; align-items: center;}
     .advantages .adv--items {display: grid; grid-template-columns: 1fr 1fr; row-gap: 1.8rem;}
-    footer.footer .brand {flex-direction: column-reverse; gap: 0;}
-    footer.footer .brand .logo img {height: 220px;}
-    footer.footer .brand .about-social {width: 80%;}
-    footer.footer .brand .about-social .about {text-align-last: center;}
-    footer.footer .powerd p {font-size: .85rem;}
     .why_zd .content .items {flex-direction: column; gap: 1rem;}
     .why_zd .content .items .side > .title {justify-content: center;}
     .why_zd .content .descript {width: 80%;}

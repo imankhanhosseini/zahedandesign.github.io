@@ -71,10 +71,10 @@
       url("font/kalameh/TTF/Kalameh-Regular.ttf") format("ttf"), 
 }
 :root {
-    --main: #206978;
-    --secondary: #ff9442;
-    --third: #46a6a6;
-    --BLCK: #252525;
+    --main: #3f2161;
+    --secondary: #bab9bd;
+    --third: #ff9442;
+    --BLCK: #212220;
 }
 * {
     margin: 0;
